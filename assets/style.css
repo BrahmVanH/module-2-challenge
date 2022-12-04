@@ -72,6 +72,8 @@ header h4 {
     align-items: stretch;
     justify-content: space-around;
     background-color: white;
+    width: 80vw;
+    margin: auto;
 }
 
 
