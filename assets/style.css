@@ -47,8 +47,6 @@ header h4 {
     
 }
 
-
-
 .nav-bar {
     position: -webkit-sticky;
 	position: sticky;
@@ -78,7 +76,6 @@ header h4 {
     
 }
 
-
 .my-stuff {
     
     display: flex;
@@ -93,7 +90,6 @@ header h4 {
     padding: 0px;
 
 }
-
 
 .my-stuff article {
     border-bottom: solid #090c0f;
@@ -112,8 +108,7 @@ header h4 {
    padding: 0px;
     
 
-    }
-
+}
 
 .my-project-images {
     margin: 2px;
@@ -156,8 +151,6 @@ header h4 {
     padding: 0px;
 }
 
-
-
 #contact {
     padding: 10px;
     align-items: center;
@@ -165,9 +158,6 @@ header h4 {
 
 }
 
-.header-container {
-    width: 30%;
-}
 
 #contact ul {
     display: flex;
@@ -222,10 +212,20 @@ header h4 {
         display: block;
         width: 100px;
         height: 100px;
+        
+    }
+
+    #projects {
+        justify-content: center;
+        align-items: center;
     }
 
     #contact ul {
         display: block;
+    }
+
+    #about-me {
+        align-items: center;
     }
 
     #about-me img {
@@ -243,7 +243,7 @@ header h4 {
   
     
   
-  }
+  
 
 
    
