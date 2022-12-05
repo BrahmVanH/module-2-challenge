@@ -2,7 +2,15 @@
     margin: 0;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 0.5%;
+    
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+a { color: inherit; } 
 
 body {
     background-image: linear-gradient(#24323d, #40576b)
@@ -18,15 +26,17 @@ header {
     justify-content: flex-end;
     flex-direction: column;
     color: whitesmoke;
+    font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
     
 }
 
 header h1 {
-    border-bottom: solid black;
+    border-bottom: solid #090c0f;
     width: 35%;
     justify-self: center;
     padding: 10px;
     margin: 5px;
+    
 }
 
 header h4 {
@@ -47,6 +57,9 @@ header h4 {
     margin: 5px;
     text-decoration: none;
     z-index: 1;
+    font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
+    font-size: 1.2em;
+    border: inset #090c0f;
 } 
 
 .nav-bar ul {
@@ -61,6 +74,8 @@ header h4 {
     top: 0px;
     right: 2px;
     color: white;
+    border-right: dashed whitesmoke;
+    
 }
 
 
@@ -71,44 +86,47 @@ header h4 {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    background-color: whitesmoke;
+    
     width: 80vw;
     margin: auto;
+    font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
+    padding: 0px;
+
 }
 
 
 .my-stuff article {
-    border-bottom: solid black;
+    border-bottom: solid #090c0f;
     justify-content: space-evenly;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 1em;
     
 }
 
 .my-stuff article h3 {
     
-   position: relative;
+   
    color: whitesmoke;
    padding: 0px;
     
 
     }
 
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .my-project-images {
-    margin: 4px;
+    margin: 2px;
+    padding: 2px;
+    border: outset whitesmoke;
 }
 
 #about-me {
     padding: 10px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #090c0f;
     background-color: #52708a;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -118,10 +136,18 @@ header h4 {
    
 }
 
+#about-me p {
+    max-width: 60%;
+    float: left;
+}
+
 #projects {
     
     padding: 10px;
     background-color: #52708a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #projects h3 {
@@ -139,9 +165,8 @@ header h4 {
 
 }
 
-#contact h3 {
-    
-
+.header-container {
+    width: 30%;
 }
 
 #contact ul {
@@ -152,23 +177,40 @@ header h4 {
 }
 
 #contact li {
-    border: solid black;
+    border: solid #090c0f;
     padding: 5px;
+    background-color: #1b252e;
+    color: whitesmoke;
+    
 }
 
 
 @media (max-width: 992px ) {
-    article h3 {
+    #about-me h3 {
     
         rotate: 90deg;
-       
+          
+  }
+
+  #projects h3 {
+    rotate: 90deg;
   }
 
   .hide-content {
     display: none;
   }
 
+  #projects h3 {
+    right: 28px;
+    top: 24px;
+  }
 
+  #contact h3 {
+    rotate: 90deg;
+    position: relative;
+    right: 66px;
+  }
+}
 
 @media (max-width: 768px ) {
     
@@ -189,6 +231,12 @@ header h4 {
     #about-me img {
         display: none;
     }
+
+    #contact h3 {
+       
+        position: relative;
+        right: 29px;
+      }
     
   }
   
@@ -198,8 +246,4 @@ header h4 {
   }
 
 
-    a:link { text-decoration: none; }
-    a:visited { text-decoration: none; }
-    a:hover { text-decoration: none; }
-    a:active { text-decoration: none; }
-    a { color: inherit; } 
+   
