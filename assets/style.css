@@ -71,7 +71,7 @@ header h4 {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    background-color: white;
+    background-color: whitesmoke;
     width: 80vw;
     margin: auto;
 }
@@ -130,6 +130,8 @@ header h4 {
     padding: 0px;
 }
 
+
+
 #contact {
     padding: 10px;
     align-items: center;
@@ -155,16 +157,37 @@ header h4 {
 }
 
 
-@media all(max-width: 992px ) {
-    #about-me h3 {
+@media (max-width: 992px ) {
+    article h3 {
     
         rotate: 90deg;
        
   }
 
+  .hide-content {
+    display: none;
+  }
+
+
+
 @media (max-width: 768px ) {
-    #contact h3 {
-      
+    
+    .my-stuff {
+        flex-wrap: nowrap;
+    }
+    
+    #projects img {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+
+    #contact ul {
+        display: block;
+    }
+
+    #about-me img {
+        display: none;
     }
     
   }
