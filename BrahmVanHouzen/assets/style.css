@@ -13,13 +13,12 @@ a:active { text-decoration: none; }
 a { color: inherit; } 
 
 body {
-    background-image: linear-gradient(#24323d, #40576b)
+    background-color: #24323d;
 }
 
 header {
     
     width: 100%;
-    background-color: #1b252e;
     text-align: right;
     align-items: flex-end;
     display: flex;
@@ -47,33 +46,36 @@ header h4 {
     
 }
 
-.nav-bar {
-    position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-    background-color: #49637a;
-    margin: 5px;
-    text-decoration: none;
-    z-index: 1;
-    font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
-    font-size: 1.2em;
-    border: inset #090c0f;
+nav {
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
 } 
 
-.nav-bar ul {
-    display: inline;
+
+
+#showcase {
+    flex-wrap: nowrap;
+    position:relative;
+    margin:20px auto;
+    width:20%;
+    padding-bottom:20%;
+    border:1px solid white;
+
 }
-.nav-bar li {
-    
-    display: inline;
-    padding: 0px 3px;
-    text-align: center;
-    position: relative;
-    top: 0px;
-    right: 2px;
-    color: white;
-    border-right: dashed whitesmoke;
-    
+
+
+#showcase:before {
+    content:'';
+    position:absolute;
+    top:-1px; left:-1px;
+    border:1px solid #fff;
+    height:100%;
+    width:100%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .my-stuff {
@@ -114,6 +116,7 @@ header h4 {
     margin: 2px;
     padding: 2px;
     border: outset whitesmoke;
+    display: none;
 }
 
 #about-me {
@@ -136,20 +139,15 @@ header h4 {
     float: left;
 }
 
-#projects {
+#showcase {
     
     padding: 10px;
-    background-color: #52708a;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    border-top-right-radius: 0% black;
+    border-bottom-left-radius: 0%;
+    
 }
 
-#projects h3 {
-   
-    position: relative;
-    padding: 0px;
-}
+
 
 #contact {
     padding: 10px;
@@ -182,18 +180,12 @@ header h4 {
           
   }
 
-  #projects h3 {
-    rotate: 90deg;
-  }
 
   .hide-content {
     display: none;
   }
 
-  #projects h3 {
-    right: 28px;
-    top: 24px;
-  }
+  
 
   #contact h3 {
     rotate: 90deg;

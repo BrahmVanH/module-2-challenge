@@ -29,3 +29,15 @@ To-do:
         -Create database with bike service information??
         -Link to affiliates page
         -Work on subtitle
+
+
+    Deleted original bio:
+        <article id="bio" class="d-none">
+                <h3>Me</h3>
+                <p>	I am a student developer based out of Marquette, Michigan. Most of my professional experience has
+                    arisen from my history as an independent electrician and professional commercial SCUBA diver.
+                    Although my time on the keyboard has been limited thus far, I anticipate hitting the ground 
+                    running with this soon-to-be newly acquired certificate. </p>
+                    <img class="my-image" src="./assets/images/220917 Marji Gesick Ryan Stephens Photo-826 but smaller.jpg" alt="MG100 2022" height="200" width="150"> 
+            
+            </article>
