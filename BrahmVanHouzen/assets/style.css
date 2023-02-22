@@ -8,12 +8,12 @@
 
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
+a:hover { text-decoration: black; }
 a:active { text-decoration: none; }
 a { color: inherit; } 
 
 body {
-    background-color: #24323d;
+    background-color: #071624;
 }
 
 header {
@@ -30,6 +30,7 @@ header {
 }
 
 header h1 {
+    
     border-bottom: solid #090c0f;
     width: 35%;
     justify-self: center;
@@ -54,28 +55,8 @@ nav {
     
 } 
 
-
-
-#showcase {
-    flex-wrap: nowrap;
-    position:relative;
-    margin:20px auto;
-    width:20%;
-    padding-bottom:20%;
-    border:1px solid white;
-
-}
-
-
-#showcase:before {
-    content:'';
-    position:absolute;
-    top:-1px; left:-1px;
-    border:1px solid #fff;
-    height:100%;
-    width:100%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+nav a {
+    font-size: 18pt;
 }
 
 .my-stuff {
@@ -85,7 +66,6 @@ nav {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    
     width: 80vw;
     margin: auto;
     font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
@@ -94,6 +74,7 @@ nav {
 }
 
 .my-stuff article {
+
     border-bottom: solid #090c0f;
     justify-content: space-evenly;
     display: flex;
@@ -105,45 +86,34 @@ nav {
 
 .my-stuff article h3 {
     
-   
    color: whitesmoke;
    padding: 0px;
-    
 
 }
 
 .my-project-images {
+    
     margin: 2px;
     padding: 2px;
-    border: outset whitesmoke;
-    display: none;
+    height: 18px;
+    width: 19px;
+    
 }
 
-#about-me {
-    padding: 10px;
-    border-bottom: 3px solid #090c0f;
-    background-color: #52708a;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#about-me h3 {
-   position: relative; 
-   padding: 0px;
-   
-}
-
-#about-me p {
-    max-width: 60%;
-    float: left;
-}
 
 #showcase {
     
+    height: 90vh;
     padding: 10px;
-    border-top-right-radius: 0% black;
-    border-bottom-left-radius: 0%;
+    border-width: 3px;
+    border-style: solid;
+    border-image: url(./images/border_image.png) 10 10 / 6px 4px / 0;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    justify-content: flex-start;
+    
     
 }
 

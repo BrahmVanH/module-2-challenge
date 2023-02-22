@@ -23,6 +23,7 @@ To-do:
         -hover over anchor to add box shadow or something and little pop-up with drop down if more options 
         -
     Service blog:
+        -Add typeform poll to site to request services... add typeform link to youtube page
         -Link to DWS online shop
         -DWS badge?
         -Nav bar on side
