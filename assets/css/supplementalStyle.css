@@ -1,0 +1,14 @@
+#subtitle {
+    font-size: 1em;
+}
+
+#bioContainer {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#bioContainer p {
+    max-width: 50%;
+}
