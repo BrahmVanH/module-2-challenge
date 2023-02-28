@@ -16,36 +16,6 @@ body {
     background-color: #071624;
 }
 
-header {
-    
-    width: 100%;
-    text-align: right;
-    align-items: flex-end;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    color: whitesmoke;
-    font-family: 'open-sans', 'serif', 'sans-serif', 'monospace';
-    
-}
-
-header h1 {
-    
-    border-bottom: solid #090c0f;
-    width: 35%;
-    justify-self: center;
-    padding: 10px;
-    margin: 5px;
-    
-}
-
-header h4 {
-   
-    padding: 10px;
-    margin: 5px;
-    width: 35%;
-    
-}
 
 nav {
     
@@ -58,6 +28,8 @@ nav {
 nav a {
     font-size: 18pt;
 }
+
+
 
 .my-stuff {
     
