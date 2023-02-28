@@ -138,39 +138,9 @@ nav a {
 
 @media (max-width: 768px ) {
     
-    .my-stuff {
-        flex-wrap: nowrap;
+    #bioContainer {
+        font-size: ;
     }
-    
-    #projects img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        
-    }
-
-    #projects {
-        justify-content: center;
-        align-items: center;
-    }
-
-    #contact ul {
-        display: block;
-    }
-
-    #about-me {
-        align-items: center;
-    }
-
-    #about-me img {
-        display: none;
-    }
-
-    #contact h3 {
-       
-        position: relative;
-        right: 29px;
-      }
     
   }
   
