@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import myNotepadScreenshot from '../../images/My_Notepad_screenshot.svg';
+import jateScreenshot from '../../images/JATE-screenshot.jpg';
 import '../../styles/Creations.css';
 
 const carouseCaptionStyle = {
@@ -26,6 +27,7 @@ function Creations() {
 							className='d-block w-100'
 							src={weatherNowScreenshot}
 							alt='weather now web application screenshot'
+							href='https://brahmvanh.github.io/Weather-Forecast/'
 						/>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
@@ -39,6 +41,7 @@ function Creations() {
 							className='d-block w-100'
 							src={myNotepadScreenshot}
 							alt='my notepad web application screenshot'
+							href='https://my-notepad.herokuapp.com/'
 						/>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
@@ -52,11 +55,26 @@ function Creations() {
 							className='d-block w-100'
 							src={recipeMeScreenshot}
 							alt='my notepad web application screenshot'
+							href='https://quiet-forest-61314.herokuapp.com/'
 						/>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>RecipeMe</h3>
 								<p>A customizable, web-based recipe book.</p>
+							</div>
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item interval={5000}>
+						<img
+							className='d-block w-100'
+							src={jateScreenshot}
+							alt='just another text editor application screen shot'
+							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'
+						/>
+						<Carousel.Caption>
+							<div style={carouseCaptionStyle}>
+								<h3>Just Another Text Editor</h3>
+								<p>An installable text editor application</p>
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
