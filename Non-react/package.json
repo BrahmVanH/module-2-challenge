@@ -1,0 +1,15 @@
+{
+  "name": "brahmvanhouzen",
+  "version": "1.0.0",
+  "description": "PersonalHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "my-portfolio"
+  },
+  "author": "Brahm Van Houzen",
+  "license": "MIT"
+}
