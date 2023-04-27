@@ -10,8 +10,9 @@ import '../../styles/Creations.css';
 const carouseCaptionStyle = {
 	backgroundColor: 'rgba(128, 128, 128, 0.5)',
 	padding: '20',
-	borderRadius: '',
 	width: '40%',
+	borderRadius: '10px',
+	padding: '20',
 };
 
 function Creations() {
@@ -19,7 +20,7 @@ function Creations() {
 		<>
 			<div
 				id='myCreationsCarousel'
-				style={{ maxHeight: '70vh' }}>
+				style={{ maxHeight: '70vh', maxWidth: '70%' }}>
 				<h4>My Creations</h4>
 				<Carousel>
 					<Carousel.Item interval={5000}>
