@@ -25,7 +25,6 @@ function NavBar({ currentPage, handlePageChange }) {
 						<li className='nav-item'>
 							<a
 								className='nav-link active'
-								href='/#Home'
 								onClick={() => handlePageChange('Home')}>
 								<span style={{ fontWeight: 'normal !important' }}>Home</span>
 							</a>
@@ -33,7 +32,6 @@ function NavBar({ currentPage, handlePageChange }) {
 						<li className='nav-item'>
 							<a
 								className='nav-link'
-								href='/#Creations'
 								onClick={() => handlePageChange('Creations')}>
 								Creations
 							</a>
@@ -53,7 +51,6 @@ function NavBar({ currentPage, handlePageChange }) {
 						<li className='nav-item'>
 							<a
 								className='nav-link'
-								href='/#Contact'
 								onClick={() => handlePageChange('Contact')}>
 								Contact
 							</a>
