@@ -2,7 +2,7 @@
   "name": "brahmvanhouzen_studio-react",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://brahmvanhouzen.studionpm",
+  "homepage": "https://brahmvanhouzen.studio",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
