@@ -5,6 +5,8 @@ import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import myNotepadScreenshot from '../../images/My_Notepad_screenshot.svg';
 import jateScreenshot from '../../images/JATE-screenshot.jpg';
+import cliReadmeScreenshot from '../../images/CLI-README-generator.jpg';
+import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg';
 import '../../styles/Creations.css';
 
 const carouseCaptionStyle = {
@@ -76,6 +78,33 @@ function Creations() {
 							<div style={carouseCaptionStyle}>
 								<h3>Just Another Text Editor</h3>
 								<p>An installable text editor application</p>
+							</div>
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item interval={5000}>
+						<img
+							className='d-block w-100'
+							src={cliReadmeScreenshot}
+							alt='screenshot of command line based README generator application'
+							href='https://github.com/BrahmVanH/Command_Line_README'
+						/>
+						<Carousel.Caption>
+							<div style={carouseCaptionStyle}>
+								<h3>CLI README</h3>
+							</div>
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item interval={5000}>
+						<img
+							className='d-block w-100'
+							src={eCommerceScreenshot}
+							alt='screenshot of a heroku demo of eCommerce back-end application'
+							href='https://github.com/BrahmVanH/eCommerce_Back-end'
+						/>
+						<Carousel.Caption>
+							<div style={carouseCaptionStyle}>
+								<h3>eCommerce Back-End</h3>
+								<p>Server-side data handling for eCommerce using MySql </p>
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
