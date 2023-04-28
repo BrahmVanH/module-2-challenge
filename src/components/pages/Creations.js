@@ -25,7 +25,7 @@ function Creations() {
 				style={{ maxHeight: '70vh', maxWidth: '70%' }}>
 				<h4>My Creations</h4>
 				<Carousel>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={weatherNowScreenshot}
@@ -39,7 +39,7 @@ function Creations() {
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={myNotepadScreenshot}
@@ -53,7 +53,7 @@ function Creations() {
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={recipeMeScreenshot}
@@ -67,7 +67,7 @@ function Creations() {
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={jateScreenshot}
@@ -81,7 +81,7 @@ function Creations() {
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={cliReadmeScreenshot}
@@ -94,7 +94,7 @@ function Creations() {
 							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
-					<Carousel.Item interval={5000}>
+					<Carousel.Item interval={3000}>
 						<img
 							className='d-block w-100'
 							src={eCommerceScreenshot}
