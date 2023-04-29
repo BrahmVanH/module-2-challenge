@@ -1,5 +1,4 @@
 import React from 'react';
-import '../js/bootstrap.min.js';
 
 const cursorPointer = {
 	cursor: 'pointer',
