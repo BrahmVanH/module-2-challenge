@@ -1,15 +1,17 @@
 import React from 'react';
+import '../js/bootstrap.min.js';
+
+const cursorPointer = {
+	cursor: 'pointer',
+};
 
 function NavBar({ currentPage, handlePageChange }) {
 	return (
 		<nav
-			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
+			className='navbar cursorPointer navbar-dark navbar-expand-md sticky-top py-3'
 			id='mainNav'
 			style={{ background: 'var(--bs-body-bg)' }}>
-			<div className='container'>
-				<a
-					className='navbar-brand d-flex align-items-center'
-					href='/'></a>
+			<div className='flex-nowrap container'>
 				<button
 					data-bs-toggle='collapse'
 					className='navbar-toggler'

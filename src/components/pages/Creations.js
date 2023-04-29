@@ -26,12 +26,13 @@ function Creations() {
 				<h4>My Creations</h4>
 				<Carousel>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={weatherNowScreenshot}
-							alt='weather now web application screenshot'
-							href='https://brahmvanh.github.io/Weather-Forecast/'
-						/>
+						<a href='https://brahmvanh.github.io/Weather-Forecast/'>
+							<img
+								className='d-block w-100'
+								src={weatherNowScreenshot}
+								alt='weather now web application screenshot'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>WEATHERNOW.</h3>
@@ -40,12 +41,13 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={myNotepadScreenshot}
-							alt='my notepad web application screenshot'
-							href='https://my-notepad.herokuapp.com/'
-						/>
+						<a href='https://my-notepad.herokuapp.com/'>
+							<img
+								className='d-block w-100'
+								src={myNotepadScreenshot}
+								alt='my notepad web application screenshot'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>My Notepad</h3>
@@ -54,12 +56,13 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={recipeMeScreenshot}
-							alt='my notepad web application screenshot'
-							href='https://quiet-forest-61314.herokuapp.com/'
-						/>
+						<a href='https://quiet-forest-61314.herokuapp.com/'>
+							<img
+								className='d-block w-100'
+								src={recipeMeScreenshot}
+								alt='my notepad web application screenshot'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>RecipeMe</h3>
@@ -68,12 +71,14 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={jateScreenshot}
-							alt='just another text editor application screen shot'
-							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'
-						/>
+						<a href='https://text-editor-pwa-vanhouzen.herokuapp.com/'>
+							<img
+								className='d-block w-100'
+								src={jateScreenshot}
+								alt='just another text editor application screen shot'
+								href='https://text-editor-pwa-vanhouzen.herokuapp.com/'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>Just Another Text Editor</h3>
@@ -82,12 +87,13 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={cliReadmeScreenshot}
-							alt='screenshot of command line based README generator application'
-							href='https://github.com/BrahmVanH/Command_Line_README'
-						/>
+						<a href='https://github.com/BrahmVanH/Command_Line_README'>
+							<img
+								className='d-block w-100'
+								src={cliReadmeScreenshot}
+								alt='screenshot of command line based README generator application'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>CLI README</h3>
@@ -95,12 +101,13 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<img
-							className='d-block w-100'
-							src={eCommerceScreenshot}
-							alt='screenshot of a heroku demo of eCommerce back-end application'
-							href='https://github.com/BrahmVanH/eCommerce_Back-end'
-						/>
+						<a href='https://github.com/BrahmVanH/eCommerce_Back-end'>
+							<img
+								className='d-block w-100'
+								src={eCommerceScreenshot}
+								alt='screenshot of a heroku demo of eCommerce back-end application'
+							/>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>eCommerce Back-End</h3>
