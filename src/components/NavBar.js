@@ -1,15 +1,13 @@
 import React from 'react';
 
-const cursorPointer = {
-	cursor: 'pointer',
-};
+
 
 function NavBar({ currentPage, handlePageChange }) {
 	return (
 		<nav
-			className='navbar cursorPointer navbar-dark navbar-expand-md sticky-top py-3'
+			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
 			id='mainNav'
-			style={{ background: 'var(--bs-body-bg)' }}>
+			style={{ cursor: 'pointer', background: 'var(--bs-body-bg)' }}>
 			<div className='flex-nowrap container'>
 				<button
 					data-bs-toggle='collapse'
