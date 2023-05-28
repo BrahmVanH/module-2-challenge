@@ -9,4 +9,6 @@
 
 div .carousel-caption {
   color: black;
+  background-color: rgb(128, 128, 128, .4);
 }
+

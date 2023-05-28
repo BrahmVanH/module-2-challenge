@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import { Link } from 'react-router-dom';
 
 function NavBar({ currentPage, handlePageChange }) {
 	return (
@@ -22,30 +21,24 @@ function NavBar({ currentPage, handlePageChange }) {
 					style={{ transform: 'translate(-191)' }}>
 					<ul className='navbar-nav mx-auto'>
 						<li className='nav-item'>
-							<a
-								className='nav-link active'
-								onClick={() => handlePageChange('Home')}>
+							<Link className='nav-link active' to='/'>
 								<span style={{ fontWeight: 'normal !important' }}>Home</span>
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
+							<Link
 								className='nav-link'
-								onClick={() => handlePageChange('Creations')}>
+								to='/creations'>
 								Creations
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
-								href={
-									process.env.PUBLIC_URL +
-									'/pdf/Brahm_vanhouzen_developer-resume.pdf'
-								}
+							<Link
+								to='/resume'
 								target='blank'
-								rel='noopener noreferrer'
 								className='nav-link'>
 								Resume
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
 							<a
