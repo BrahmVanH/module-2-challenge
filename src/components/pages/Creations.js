@@ -27,13 +27,16 @@ function Creations() {
 				<h4>My Creations</h4>
 				<Carousel>
 					<Carousel.Item interval={3000}>
-						<Link to='https://brahmvanh.github.io/Weather-Forecast/'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://brahmvanh.github.io/Weather-Forecast/'>
 							<img
 								className='d-block w-100'
 								src={weatherNowScreenshot}
 								alt='weather now web application screenshot'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>WEATHERNOW.</h3>
@@ -42,13 +45,16 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<Link to='https://my-notepad.herokuapp.com/'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://my-notepad.herokuapp.com/'>
 							<img
 								className='d-block w-100'
 								src={myNotepadScreenshot}
 								alt='my notepad web application screenshot'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>My Notepad</h3>
@@ -57,13 +63,16 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<Link to='https://recipeme-recipe-logger.herokuapp.com/'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://recipeme-recipe-logger.herokuapp.com/'>
 							<img
 								className='d-block w-100'
 								src={recipeMeScreenshot}
 								alt='my notepad web application screenshot'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>RecipeMe</h3>
@@ -72,14 +81,17 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<Link to='https://text-editor-pwa-vanhouzen.herokuapp.com/'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'>
 							<img
 								className='d-block w-100'
 								src={bteScreenshot}
 								alt='just another text editor application screen shot'
 								to='https://text-editor-pwa-vanhouzen.herokuapp.com/'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>Just Another Text Editor</h3>
@@ -88,13 +100,16 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<Link to='https://github.com/BrahmVanH/Command_Line_README'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://github.com/BrahmVanH/Command_Line_README'>
 							<img
 								className='d-block w-100'
 								src={cliReadmeScreenshot}
 								alt='screenshot of command line based README generator application'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>CLI README</h3>
@@ -102,13 +117,16 @@ function Creations() {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item interval={3000}>
-						<Link to='https://github.com/BrahmVanH/eCommerce_Back-end'>
+						<a
+							target='_blank'
+							rel='noopener noreferrer'
+							href='https://github.com/BrahmVanH/eCommerce_Back-end'>
 							<img
 								className='d-block w-100'
 								src={eCommerceScreenshot}
 								alt='screenshot of a heroku demo of eCommerce back-end application'
 							/>
-						</Link>
+						</a>
 						<Carousel.Caption>
 							<div style={carouseCaptionStyle}>
 								<h3>eCommerce Back-End</h3>

@@ -17,7 +17,10 @@ function Home() {
 			<div className='row gy-4 w-100' style={{ maxWidth: '800' }}>
 				<div className='col-12'>
 					<div className='card'>
-						<Link to='https://recipeme-recipe-logger.herokuapp.com/'>
+						<a
+							href='https://recipeme-recipe-logger.herokuapp.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img
 								className='card-img w-100 d-block'
 								src={recipeMeScreenshot}
@@ -33,12 +36,15 @@ function Home() {
 									<p>A customizable, web-based recipe book.</p>
 								</div>
 							</div>
-						</Link>
+						</a>
 					</div>
 				</div>
 				<div className='col-12 col-md-6'>
 					<div className='card'>
-						<Link to='https://brahmvanh.github.io/Weather-Forecast/'>
+						<a
+							href='https://brahmvanh.github.io/Weather-Forecast/'
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img
 								className='card-img w-100 d-block'
 								src={weatherNowScreenshot}
@@ -47,12 +53,15 @@ function Home() {
 								<h4>WEATHERNOW</h4>
 								<p>A sleek, easy to use weather application.</p>
 							</div>
-						</Link>
+						</a>
 					</div>
 				</div>
 				<div className='col-12 col-md-6'>
 					<div className='card'>
-						<Link to='https://text-editor-pwa-vanhouzen.herokuapp.com/'>
+						<a
+							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
 							<img className='card-img w-100 d-block' src={bteScreenshot} />
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>Basic Text Editor </h4>
@@ -61,7 +70,7 @@ function Home() {
 									in mind.
 								</p>
 							</div>
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>
