@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,13 @@ import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 
 function Home() {
+
+	useEffect(() => {
+		console.log("Hello! My name's Brahm (with a short 'a' sound), thanks for stopping by my website.");
+		console.log("Although my background labels me as a scientist of sports physiology, my passions and worldview have me striving to explore far outside the confines of human biology. My endeavors have include commercial SCUBA diving, ultra endurance mountain biking, electrical installation, and now web and app development. My goal is to produce polished, well-planned, and beautiful products to share with the world.")
+		console.log("Here are a few of the projects I've worked on. You can find the rest of my showcase by following the 'Showcase' button in the navbar.");
+		console.log("You can find my professional resume by following the 'Resume' button in the navbar");
+	})
 	return (
 		<div className='container d-flex flex-column align-items-center py-4 py-xl-5'>
 			<div className='row mb-5'>

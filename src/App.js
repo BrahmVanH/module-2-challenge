@@ -6,20 +6,20 @@ import Showcase from './components/pages/Showcase';
 import Contact from './components/Contact/index';
 import About from './components/pages/About';
 import Footer from './components/Footer';
+import Resume from './components/pages/Resume'
 
 export default function App() {
 	return (
-		<div id='portfolioContainer'>
-			<Router>
-				<NavBar />
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='/creations' element={<Showcase />} />
-					<Route path='/contact' element={<Contact />} />
-					<Route path='/about' element={<About />} />
-				</Routes>
-				<Footer />
-			</Router>
-		</div>
+		<Router>
+			<NavBar />
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/showcase' element={<Showcase />} />
+				<Route path='/resume' element={<Resume />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/contact' element={<Contact />} />
+			</Routes>
+			<Footer />
+		</Router>
 	);
 }

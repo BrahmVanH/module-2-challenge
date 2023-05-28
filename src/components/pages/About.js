@@ -28,17 +28,12 @@ export default function Home() {
 					seeking new challenges. This sense of adventure fuels my drive to
 					approach each project with enthusiasm and a fresh perspective.
 					<br />
-					My true passion lies in helping individuals like you execute their
-					vision. I am dedicated to empowering you to transform your ideas into
-					reality. By harnessing my expertise in various web development
+					Driven by a passion for living and creating captivating experiences, I
+					combine my full-stack web development training with an eye for
+					aesthetics. I am dedicated to empowering you to transform your ideas
+					into reality. By harnessing my expertise in various web development
 					technologies, we can work together to bring your vision to life in the
 					most remarkable and impactful ways.
-					<br />
-					With an unwavering commitment to excellence and a deep love for
-					problem-solving, I am here to collaborate with you. Together, we can
-					leverage the necessary tools and strategies to turn your dreams into
-					tangible success. Let's embark on this exciting journey together and
-					make your vision a reality!
 				</p>
 			</section>
 		</div>

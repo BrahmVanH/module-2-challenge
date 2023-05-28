@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
@@ -10,8 +10,16 @@ import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg'
 import '../../styles/Creations.css';
 
 function Showcase() {
+	useEffect(() => {
+		console.log(
+			"Welcome to my showcase! Here is a collection of the project's I have worked on solo or collaborated on with other developers."
+		);
+		console.log(
+			"Currently, you'll find a mix of front, back, and full-stack applications."
+		);
+	});
 	return (
-		<div className='container d-flex flex-column align-items-center py-4 py-xl-5'>
+		<div className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center'>
 			<div
 				className='row gy-4 row-cols-1 row-cols-md-2 w-100'
 				style={{ maxWidth: '800' }}>
@@ -28,15 +36,23 @@ function Showcase() {
 							/>
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>My notepad</h4>
-								<p>A simple note taking application.</p>
+								<p className='d-none d-sm-block'>
+									A simple note taking application.
+								</p>
 							</div>
 						</a>
 					</div>
 				</div>
 				<div className='col d-md-flex order-first justify-content-md-center align-items-md-center order-md-1'>
-					<div style={{ width: '80%' }}>
+					<div
+						className='py-3 px-3'
+						style={{
+							width: '80%',
+							backgroundColor: 'rgb(192, 192, 192, 0.15)',
+							borderRadius: '16px',
+						}}>
 						<h2>Showcase</h2>
-						<p>
+						<p className='d-none d-sm-block'>
 							A collection of my front-end, back-end, and full-stack projects.
 						</p>
 					</div>
@@ -54,7 +70,9 @@ function Showcase() {
 							/>
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>Command Line README Generator</h4>
-								<p>Create professional REAEDME files from the command line.</p>
+								<p className='d-none d-sm-block'>
+									Create professional REAEDME files from the command line.
+								</p>
 							</div>
 						</a>
 					</div>
@@ -72,7 +90,9 @@ function Showcase() {
 							/>
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>RecipeMe</h4>
-								<p>A customizable, web-based recipe book.</p>
+								<p className='d-none d-sm-block'>
+									A customizable, web-based recipe book.
+								</p>
 							</div>
 						</a>
 					</div>
@@ -91,7 +111,9 @@ function Showcase() {
 							/>
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>eCommerce Back-end</h4>
-								<p>Server-side data handling for eCommerce using MySql </p>
+								<p className='d-none d-sm-block'>
+									Server-side data handling for eCommerce using MySql{' '}
+								</p>
 							</div>
 						</a>
 					</div>
@@ -107,11 +129,13 @@ function Showcase() {
 								src={weatherNowScreenshot}
 								alt='weather now web application screenshot'
 							/>
+							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
+								<h4>WEATHERNOW</h4>
+								<p className='d-none d-sm-block'>
+									A sleek, easy to use weather application.
+								</p>
+							</div>
 						</a>
-						<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
-							<h4>WEATHERNOW</h4>
-							<p>A sleek, easy to use weather application.</p>
-						</div>
 					</div>
 				</div>
 				<div className='col order-md-2'>
@@ -128,7 +152,7 @@ function Showcase() {
 							/>
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>Basic Text Editor</h4>
-								<p>
+								<p className='d-none d-sm-block'>
 									A basic text editor designed with offline-first functionality
 									in mind.
 								</p>
