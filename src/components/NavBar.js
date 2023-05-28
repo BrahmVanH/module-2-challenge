@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavBar({ currentPage, handlePageChange }) {
+function NavBar() {
 	return (
 		<nav
 			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
@@ -26,26 +26,19 @@ function NavBar({ currentPage, handlePageChange }) {
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link
-								className='nav-link'
-								to='/creations'>
+							<Link className='nav-link' to='/creations'>
 								Creations
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link
-								to='/resume'
-								target='blank'
-								className='nav-link'>
+							<Link to='/resume' target='blank' className='nav-link'>
 								Resume
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
-								className='nav-link'
-								onClick={() => handlePageChange('Contact')}>
+							<Link className='nav-link' to='/contact' target='blank'>
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
