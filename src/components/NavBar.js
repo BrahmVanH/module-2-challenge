@@ -1,8 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-
-
-function NavBar({ currentPage, handlePageChange }) {
+function NavBar() {
 	return (
 		<nav
 			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
@@ -22,37 +21,29 @@ function NavBar({ currentPage, handlePageChange }) {
 					style={{ transform: 'translate(-191)' }}>
 					<ul className='navbar-nav mx-auto'>
 						<li className='nav-item'>
-							<a
-								className='nav-link active'
-								onClick={() => handlePageChange('Home')}>
+							<Link className='nav-link active' to='/'>
 								<span style={{ fontWeight: 'normal !important' }}>Home</span>
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
-								className='nav-link'
-								onClick={() => handlePageChange('Creations')}>
-								Creations
-							</a>
+							<Link className='nav-link' to='/showcase'>
+								Showcase
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
-								href={
-									process.env.PUBLIC_URL +
-									'/pdf/Brahm_vanhouzen_developer-resume.pdf'
-								}
-								target='blank'
-								rel='noopener noreferrer'
-								className='nav-link'>
+							<Link to='/resume' target='blank' className='nav-link'>
 								Resume
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a
-								className='nav-link'
-								onClick={() => handlePageChange('Contact')}>
+							<Link className='nav-link' to='/about' target='blank'>
+								About
+							</Link>
+						</li>
+						<li className='nav-item'>
+							<Link className='nav-link' to='/contact' target='blank'>
 								Contact
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>

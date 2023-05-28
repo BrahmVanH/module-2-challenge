@@ -1,8 +1,10 @@
 import React from 'react';
 
+// Import EmailJS for form support
+
 function ContactForm() {
 	return (
-		<div className='p-sm-5 col-3' >
+		<div className='p-sm-5 col-3'>
 			<h2 className='text-center mb-4'>Contact me</h2>
 			<form method='post'>
 				<div className='mb-3'>
@@ -32,9 +34,7 @@ function ContactForm() {
 						placeholder='Message'></textarea>
 				</div>
 				<div>
-					<button
-						className='btn btn-primary d-block w-100'
-						type='submit'>
+					<button className='btn btn-primary d-block w-100' type='submit'>
 						Send{' '}
 					</button>
 				</div>
