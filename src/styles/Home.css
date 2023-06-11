@@ -3,11 +3,12 @@
   overflow: visible;
   width: 100%;
   /* set a height because the contents are position: absolute, thus natively there's no height */
-  height: 1300px;
+  height: 600px;
 
 }
 
 #smooth-content .project-display {
-  top: 30%;
+  bottom: 20%;
+  padding-left: 1.2rem;
 }
 
