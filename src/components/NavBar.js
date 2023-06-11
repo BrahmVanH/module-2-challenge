@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef} from 'react'
 import { Link } from 'react-router-dom';
+import gsap, { Power1 } from 'gsap';
+
 
 function NavBar() {
+
+	const navbar = useRef();
+
+	useEffect(() => {
+		gsap.fromTo(
+			'#mainNav',
+			{
+				opacity: 0,
+			},
+			{
+				opacity: 1,
+				duration: 0.5,
+				ease: Power1.easeIn,
+			}
+		);
+	}, []);
+
 	return (
 		<nav
+			ref={navbar}
 			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
 			id='mainNav'
 			style={{ cursor: 'pointer', background: 'var(--bs-body-bg)' }}>

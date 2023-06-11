@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.670825bd.css",
-    "main.js": "/static/js/main.7086e586.js",
+    "main.css": "/static/css/main.ed9bfc24.css",
+    "main.js": "/static/js/main.470727a1.js",
     "static/media/RecipeMe_screenshot.svg": "/static/media/RecipeMe_screenshot.b35f1d847e443597ed780443cca5fb72.svg",
     "static/media/eCommerce_back_end-screenshot.jpg": "/static/media/eCommerce_back_end-screenshot.587b17665aa3647a6742.jpg",
+    "static/media/weathernow_screenshot-taller.png": "/static/media/weathernow_screenshot-taller.91a0170acea8bd0dea3e.png",
     "static/media/CLI-README-generator.jpg": "/static/media/CLI-README-generator.a19592f0a3073d2869a2.jpg",
     "static/media/weathernow_screenshot.png": "/static/media/weathernow_screenshot.d4fe1a1e4904c759b925.png",
     "static/media/My_Notepad_screenshot.svg": "/static/media/My_Notepad_screenshot.afe4797f488f68c09d4ccde4acb18f2a.svg",
     "static/media/developerResume.pdf": "/static/media/developerResume.9c4943f2da48a0b793cc.pdf",
     "static/media/BTE-text-editor-screenshot.png": "/static/media/BTE-text-editor-screenshot.1f3893e9d65ac5259546.png",
     "index.html": "/index.html",
-    "main.670825bd.css.map": "/static/css/main.670825bd.css.map",
-    "main.7086e586.js.map": "/static/js/main.7086e586.js.map"
+    "main.ed9bfc24.css.map": "/static/css/main.ed9bfc24.css.map",
+    "main.470727a1.js.map": "/static/js/main.470727a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.670825bd.css",
-    "static/js/main.7086e586.js"
+    "static/css/main.ed9bfc24.css",
+    "static/js/main.470727a1.js"
   ]
 }
