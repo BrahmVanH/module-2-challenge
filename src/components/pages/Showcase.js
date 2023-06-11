@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap, { Power1 } from 'gsap';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
@@ -7,9 +8,35 @@ import myNotepadScreenshot from '../../images/My_Notepad_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import cliReadmeScreenshot from '../../images/CLI-README-generator.jpg';
 import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg';
+
 import '../../styles/Creations.css';
 
 function Showcase() {
+	const main = useRef();
+	const projectsRef = useRef();
+
+	useEffect(() => {
+		const projects = projectsRef.current;
+
+		gsap.fromTo(
+			'.card',
+			{
+				opacity: 0
+			},
+			{
+				opacity: 1,
+				y: 60,
+				duration: .5,
+				ease: Power1.easeIn,
+				stagger: {
+					amount: 1,
+					grid: 'auto',
+					from: 'center',
+				},
+			}
+		);
+	}, []);
+
 	useEffect(() => {
 		console.log(
 			"Welcome to my showcase! Here is a collection of the project's I have worked on solo or collaborated on with other developers."
@@ -23,7 +50,7 @@ function Showcase() {
 			<div
 				className='row gy-4 row-cols-1 row-cols-md-2 w-100'
 				style={{ maxWidth: '800' }}>
-				<div className='col order-md-first'>
+				<div className='col order-md-first' ref={projectsRef}>
 					<div className='card'>
 						<a
 							target='_blank'

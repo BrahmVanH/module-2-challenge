@@ -1,0 +1,8 @@
+.card-img {
+  clip-path: inset(100% 0% 0% 0%);
+  transition: clip-path cubic-brazier(0.77, 0, 0.175, 1);
+
+  &.is-reveal{
+    clip-path: inset(100% 0% 0% 0%);
+  }
+}
