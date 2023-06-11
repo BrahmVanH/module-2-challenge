@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap, { Power1 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
@@ -11,12 +13,13 @@ import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg'
 
 import '../../styles/Creations.css';
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 function Showcase() {
 	const main = useRef();
-	const projectsRef = useRef();
+	const smoother = useRef();
 
 	useEffect(() => {
-		const projects = projectsRef.current;
 
 		gsap.fromTo(
 			'.card',
@@ -46,12 +49,13 @@ function Showcase() {
 		);
 	});
 	return (
-		<div className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center'>
+		<div id='smooth-wrapper' className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center' ref={main}>
 			<div
+				id='smooth-content'
 				className='row gy-4 row-cols-1 row-cols-md-2 w-100'
 				style={{ maxWidth: '800' }}>
-				<div className='col order-md-first' ref={projectsRef}>
-					<div className='card'>
+				<div className='col order-md-first'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
@@ -72,6 +76,7 @@ function Showcase() {
 				</div>
 				<div className='col d-md-flex order-first justify-content-md-center align-items-md-center order-md-1'>
 					<div
+						data-speed='0.5'
 						className='py-3 px-3'
 						style={{
 							width: '80%',
@@ -85,7 +90,7 @@ function Showcase() {
 					</div>
 				</div>
 				<div className='col order-md-2'>
-					<div className='card'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
@@ -105,7 +110,7 @@ function Showcase() {
 					</div>
 				</div>
 				<div className='col order-md-2'>
-					<div className='card'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
@@ -126,7 +131,7 @@ function Showcase() {
 				</div>
 
 				<div className='col order-md-2'>
-					<div className='card'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
@@ -146,7 +151,7 @@ function Showcase() {
 					</div>
 				</div>
 				<div className='col order-md-2'>
-					<div className='card'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
@@ -166,7 +171,7 @@ function Showcase() {
 					</div>
 				</div>
 				<div className='col order-md-2'>
-					<div className='card'>
+					<div className='card' data-speed='0.5'>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
