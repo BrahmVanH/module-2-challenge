@@ -1,5 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useEffect, useRef } from 'react';
 import gsap, { Power1 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 import { Link } from 'react-router-dom';
 
@@ -7,8 +9,14 @@ import weatherNowScreenshot from '../../images/weathernow_screenshot-taller.png'
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import { restProperty } from '@babel/types';
+import '../../styles/Home.css'
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 
 function Home() {
+	const main = useRef();
+	const smoother = useRef();
 	const projectDisplay = useRef();
 	const welcomeMessageRef = useRef();
 	
@@ -37,6 +45,18 @@ function Home() {
 		});
 	}, []);
 
+	useLayoutEffect(() => {
+		const ctx = gsap.context(() => {
+			// create the smooth scroller FIRST!
+			smoother.current = ScrollSmoother.create({
+				smooth: 2, // seconds it takes to catch up to native scroll position
+				effects: true, // look for data-speed and data-lag attrivutes on elements and animate accordingly
+			});
+			
+		}, main);
+		return () => ctx.revert();
+	}, []);
+
 	useEffect(() => {
 		console.log(
 			"Hello! My name's Brahm (with a short 'a' sound), thanks for stopping by my website."
@@ -52,15 +72,23 @@ function Home() {
 		);
 	});
 	return (
-		<div className='container d-flex flex-column align-items-center py-4 py-xl-5'>
+		<div
+			ref={main}
+			id='smooth-wrapper'
+			className='container d-flex flex-column align-items-center py-4 py-xl-5'>
 			<div className='row mb-5'>
 				<div className='col-md-8 col-xl-6 text-center mx-auto'>
-					<h2 className='welcome-message'>Welcome</h2>
+					<h2 className='welcome-message'>
+						Welcome
+					</h2>
 				</div>
 			</div>
 
-			<div className='row gy-4 w-100' style={{ maxWidth: '800' }}>
-				<div style={{ overflow: 'hidden' }} className='col-12'>
+			<div
+				id='smooth-content'
+				className='row gy-4 w-100'
+				style={{ maxWidth: '800' }}>
+				<div data-speed='0.8' style={{ overflow: 'hidden' }} className='col-12'>
 					<div ref={projectDisplay} className='project-display card'>
 						<a
 							href='https://recipeme-recipe-logger.herokuapp.com/'
@@ -86,7 +114,10 @@ function Home() {
 					</div>
 				</div>
 
-				<div style={{ overflow: 'hidden' }} className='col-12 col-md-6'>
+				<div
+					data-speed='0.8'
+					style={{ overflow: 'hidden' }}
+					className='col-12 col-md-6'>
 					<div ref={projectDisplay} className='project-display card'>
 						<a
 							href='https://brahmvanh.github.io/Weather-Forecast/'
@@ -105,7 +136,10 @@ function Home() {
 					</div>
 				</div>
 
-				<div style={{ overflow: 'hidden' }} className='col-12 col-md-6'>
+				<div
+					data-speed='0.8'
+					style={{ overflow: 'hidden' }}
+					className='col-12 col-md-6'>
 					<div ref={projectDisplay} className='project-display card'>
 						<a
 							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'

@@ -20,22 +20,32 @@ function Showcase() {
 	const smoother = useRef();
 
 	useEffect(() => {
-
 		gsap.fromTo(
 			'.card',
 			{
-				opacity: 0
+				opacity: 0,
 			},
 			{
 				opacity: 1,
 				y: 60,
-				duration: .5,
+				duration: 0.5,
 				ease: Power1.easeIn,
 				stagger: {
 					amount: 1,
 					grid: 'auto',
 					from: 'center',
 				},
+			}
+		);
+		gsap.fromTo(
+			'.showcase-header-box',
+			{
+				opacity: 0,
+			},
+			{
+				opacity: 1,
+				duration: 0.5,
+				ease: Power1.easeIn,
 			}
 		);
 	}, []);
@@ -49,7 +59,10 @@ function Showcase() {
 		);
 	});
 	return (
-		<div id='smooth-wrapper' className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center' ref={main}>
+		<div
+			id='smooth-wrapper'
+			className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center'
+			ref={main}>
 			<div
 				id='smooth-content'
 				className='row gy-4 row-cols-1 row-cols-md-2 w-100'
@@ -74,10 +87,10 @@ function Showcase() {
 						</a>
 					</div>
 				</div>
-				<div className='col d-md-flex order-first justify-content-md-center align-items-md-center order-md-1'>
+				<div className=' showcase-header-box col d-md-flex order-first justify-content-md-center align-items-md-center order-md-1'>
 					<div
 						data-speed='0.5'
-						className='py-3 px-3'
+						className=' py-3 px-3'
 						style={{
 							width: '80%',
 							backgroundColor: 'rgb(192, 192, 192, 0.15)',
