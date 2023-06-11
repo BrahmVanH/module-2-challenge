@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 
+
 import { Link } from 'react-router-dom';
 
 import weatherNowScreenshot from '../../images/weathernow_screenshot.png';
@@ -29,6 +30,7 @@ function Home() {
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
+							data-scroll
 								className='card-img w-100 d-block'
 								src={recipeMeScreenshot}
 							/>
@@ -53,6 +55,7 @@ function Home() {
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
+							data-scroll
 								className='card-img w-100 d-block'
 								src={weatherNowScreenshot}
 							/>
@@ -69,7 +72,7 @@ function Home() {
 							href='https://text-editor-pwa-vanhouzen.herokuapp.com/'
 							target='_blank'
 							rel='noopener noreferrer'>
-							<img className='card-img w-100 d-block' src={bteScreenshot} />
+							<img data-scroll className='card-img w-100 d-block' src={bteScreenshot} />
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 								<h4>Basic Text Editor </h4>
 								<p>
