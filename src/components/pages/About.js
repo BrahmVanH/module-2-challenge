@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import SplitText from '../../assets/gsap/SplitText.js';
 
 function About() {
-	useEffect(() => {
-		const split = new SplitText("#bio-text", {
-			type: 'split',
-			lineClass: "chidlren"
-		})
-	}, [])
+	
+	
 	return (
 		<div style={{ padding: '20' }}>
 			<header className='bg-dark'>
