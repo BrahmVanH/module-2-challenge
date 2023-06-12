@@ -9,29 +9,32 @@ import weatherNowScreenshot from '../../images/weathernow_screenshot-taller.png'
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import { restProperty } from '@babel/types';
-import '../../styles/Home.css'
+import '../../styles/Home.css';
+
+import ReactGA from 'react-ga';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-
 function Home() {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	const main = useRef();
 	const smoother = useRef();
 	const projectDisplay = useRef();
 	const welcomeMessageRef = useRef();
-	
-	useEffect(() => {
 
+	useEffect(() => {
 		gsap.fromTo(
 			'.welcome-message',
 			{
-				opacity: 0
+				opacity: 0,
 			},
 			{
 				opacity: 1,
-				duration: .5,
+				duration: 0.5,
 				ease: Power1.easeIn,
-				
 			}
 		);
 	}, []);
@@ -52,7 +55,6 @@ function Home() {
 				smooth: 2, // seconds it takes to catch up to native scroll position
 				effects: true, // look for data-speed and data-lag attrivutes on elements and animate accordingly
 			});
-			
 		}, main);
 		return () => ctx.revert();
 	}, []);
@@ -78,9 +80,7 @@ function Home() {
 			className='container d-flex flex-column align-items-center py-4 py-xl-5'>
 			<div className='row mb-5'>
 				<div className='col-md-8 col-xl-6 text-center mx-auto'>
-					<h2 className='welcome-message'>
-						Welcome
-					</h2>
+					<h2 className='welcome-message'>Welcome</h2>
 				</div>
 			</div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/pages/Home';
@@ -7,8 +7,14 @@ import Contact from './components/Contact/index';
 import About from './components/pages/About';
 import Footer from './components/Footer';
 import Resume from './components/pages/Resume'
+import ReactGA from 'react-ga';
 
 export default function App() {
+
+	  useEffect(() => {
+			ReactGA.pageview(window.location.pathname + window.location.search);
+		}, []);
+
 	return (
 		<Router>
 			<NavBar />

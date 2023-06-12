@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
+import ReactGA from 'react-ga';
 
 function About() {
-	
-	
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	return (
 		<div style={{ padding: '20' }}>
 			<header className='bg-dark'>
@@ -20,13 +23,11 @@ function About() {
 			<section className='py-5 d-flex justify-content-center' id='bioContainer'>
 				<div className='bio-wrapper justify-content-center row'>
 					<div className='bio-content col-md-5'>
-						<p
-							id='bio-text'
-							style={{ padding: '5 5', fontSize: '1.25em' }}>
-							I'm Brahm. I am a
-							passionate professional who thrives on creative problem solving.
-							With a wealth of experience in a diverse range of web development
-							technologies, I bring a versatile skill set to the table.
+						<p id='bio-text' style={{ padding: '5 5', fontSize: '1.25em' }}>
+							I'm Brahm. I am a passionate professional who thrives on creative
+							problem solving. With a wealth of experience in a diverse range of
+							web development technologies, I bring a versatile skill set to the
+							table.
 							<br />
 							When I'm not immersed in the tech realm, you'll find me embarking
 							on thrilling adventures in the world of endurance sports,
