@@ -1,10 +1,8 @@
-import React, { useEffect, useRef} from 'react'
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap, { Power1 } from 'gsap';
 
-
 function NavBar() {
-
 	const navbar = useRef();
 
 	useEffect(() => {

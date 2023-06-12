@@ -12,9 +12,14 @@ import { render } from '@testing-library/react';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
+import ReactGA from 'react-ga';
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export function Resume() {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 	const main = useRef();
 	const smoother = useRef();
 
@@ -41,16 +46,19 @@ export function Resume() {
 		);
 	}, []);
 
-	 const renderPages = () => {
-			const pages = [];
-			for (let i = 1; i <= numPages; i++) {
-				pages.push(<Page key={i} pageNumber={i} />);
-			}
-			return pages;
-		};
+	const renderPages = () => {
+		const pages = [];
+		for (let i = 1; i <= numPages; i++) {
+			pages.push(<Page key={i} pageNumber={i} />);
+		}
+		return pages;
+	};
 
 	return (
-		<div ref={main} id='smooth-wrapper' className='d-flex justify-content-center'>
+		<div
+			ref={main}
+			id='smooth-wrapper'
+			className='d-flex justify-content-center'>
 			<Link to='../../assets/pdf/developerResume.pdf'>
 				<Document
 					id='smooth-content'
@@ -58,7 +66,7 @@ export function Resume() {
 					className='py-3 document'
 					file={myResume}
 					onLoadSuccess={onDocumentLoadSuccess}>
-				{renderPages()}
+					{renderPages()}
 				</Document>
 			</Link>
 		</div>

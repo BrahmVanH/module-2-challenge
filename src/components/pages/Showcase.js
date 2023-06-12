@@ -13,9 +13,15 @@ import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg'
 
 import '../../styles/Creations.css';
 
+import ReactGA from 'react-ga';
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function Showcase() {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	const main = useRef();
 	const smoother = useRef();
 
