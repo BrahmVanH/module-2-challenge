@@ -10,8 +10,8 @@ function About() {
 	return (
 		<div style={{ padding: '20' }}>
 			<header className='bg-dark'>
-				<div className='container pt-4 pt-xl-5'>
-					<div className='row pt-5'>
+				<div className='container p-3 p-md-3 p-lg-4'>
+					<div className='row'>
 						<div className='col-md-8 col-xl-6 text-center text-md-start mx-auto'>
 							<div className='text-center'>
 								<h1 className='fw-bold'>Welcome</h1>
@@ -20,9 +20,9 @@ function About() {
 					</div>
 				</div>
 			</header>
-			<section className='py-5 d-flex justify-content-center' id='bioContainer'>
+			<section className='py-5 -flex justify-content-center' id='bioContainer'>
 				<div className='bio-wrapper justify-content-center row'>
-					<div className='bio-content col-md-5'>
+					<div className='bio-content pb-5 col-10 col-sm-8 col-md-5 col-lg-4'>
 						<p id='bio-text' style={{ padding: '5 5', fontSize: '1.25em' }}>
 							I'm Brahm. I am a passionate professional who thrives on creative
 							problem solving. With a wealth of experience in a diverse range of
