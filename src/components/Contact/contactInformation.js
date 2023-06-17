@@ -4,7 +4,7 @@ import { MdEmail } from 'react-icons/md';
 
 function ContactCard() {
 	return (
-		<div className='col-2 d-flex'>
+		<div className='contact-cards d-flex col-8 col-md-2 col-lg-1'>
 			<div>
 				<ul style={{ listStyleType: 'none' }}>
 					<li className='list-item'>
