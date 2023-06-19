@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import gsap from 'gsap';
+import gsap, { Power1 } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import ReactGA from 'react-ga';
 
 function About() {
@@ -7,8 +9,21 @@ function About() {
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
+	useEffect(() => {
+		gsap.from(
+			'.about-section',
+
+			{
+				opacity: 0,
+				y: 60,
+				duration: 1,
+				ease: Power1.easeIn,
+			}
+		);
+	}, []);
+
 	return (
-		<div style={{ padding: '20' }}>
+		<div className='about-section' style={{ padding: '20' }}>
 			<header className='bg-dark'>
 				<div className='container p-3 p-md-3 p-lg-4'>
 					<div className='row'>

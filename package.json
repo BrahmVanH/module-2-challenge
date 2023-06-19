@@ -17,10 +17,13 @@
   "license": "ISC",
   "dependencies": {
     "@react-pdf/renderer": "^3.1.9",
+    "@stripe/react-stripe-js": "^2.1.1",
+    "@stripe/stripe-js": "^1.54.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.2.3",
+    "dotenv": "^16.3.1",
     "emailjs-com": "^3.2.0",
     "gsap": "file:gsap-bonus.tgz",
     "icons": "^1.0.0",

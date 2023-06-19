@@ -6,8 +6,12 @@ import './js/bootstrap.min.js';
 import { HashRouter } from 'react-router-dom';
 import reportWebVitals from '../src/utils/reportWebVitals';
 import ReactGA from 'react-ga';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 
 ReactGA.initialize('G-DG88CLGT4M');
+
+const stripePromise = loadStripe(process.env.STRIPE_PK);
 
 reportWebVitals((metric) => {
 	ReactGA.send({

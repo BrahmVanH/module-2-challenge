@@ -77,6 +77,7 @@ function Home() {
 		<div
 			ref={main}
 			id='smooth-wrapper'
+			style={{marginTop: '3rem'}}
 			className='container d-flex flex-column align-items-center py-4 py-xl-5'>
 			<div className='row mb-5'>
 				<div className='col-md-8 col-xl-6 text-center mx-auto'>
