@@ -3,12 +3,19 @@
   overflow: visible;
   width: 100%;
   /* set a height because the contents are position: absolute, thus natively there's no height */
-  height: 600px;
+  /* height: 600px; */
 
 }
 
 #smooth-content .project-display {
-  bottom: 20%;
   padding-left: 1.2rem;
+  transform: translate(0px, 0px) !important;
 }
+
+.welcome-message {
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+
 

@@ -49,16 +49,16 @@ function Home() {
 		});
 	}, []);
 
-	useLayoutEffect(() => {
-		const ctx = gsap.context(() => {
-			// create the smooth scroller FIRST!
-			smoother.current = ScrollSmoother.create({
-				smooth: 2, // seconds it takes to catch up to native scroll position
-				effects: true, // look for data-speed and data-lag attrivutes on elements and animate accordingly
-			});
-		}, main);
-		return () => ctx.revert();
-	}, []);
+	// useLayoutEffect(() => {
+	// 	const ctx = gsap.context(() => {
+	// 		// create the smooth scroller FIRST!
+	// 		smoother.current = ScrollSmoother.create({
+	// 			smooth: 2, // seconds it takes to catch up to native scroll position
+	// 			effects: true, // look for data-speed and data-lag attrivutes on elements and animate accordingly
+	// 		});
+	// 	}, main);
+	// 	return () => ctx.revert();
+	// }, []);
 
 	useEffect(() => {
 		console.log(
@@ -75,12 +75,11 @@ function Home() {
 		);
 	});
 	return (
-		<div ref={main} id='smooth-wrapper' className=' d-flex flex-column align-items-center'>
-			<div id='scroll-content'>
-				<NavBar />
-				<div className='row mb-5'>
-					<div className='col-md-8 col-xl-6 text-center mx-auto'>
-						<h2 className='welcome-message'>Welcome</h2>
+		<div ref={main} id='smooth-wrapper'>
+			<div id='scroll-content' className='d-flex flex-column align-items-center'>
+				<div className='row'>
+					<div className='text-center mx-auto'>
+						<h1 className='welcome-message'>Welcome</h1>
 					</div>
 				</div>
 
@@ -105,7 +104,7 @@ function Home() {
 					</div>
 
 					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='col-12 col-md-6'>
-						<div ref={projectDisplay} className='project-display card'>
+						<div ref={projectDisplay} className='project-display'>
 							<a href='https://brahmvanh.github.io/Weather-Forecast/' target='_blank' rel='noopener noreferrer'>
 								<img data-scroll className='card-img w-100 d-block' src={weatherNowScreenshot} />
 								<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
