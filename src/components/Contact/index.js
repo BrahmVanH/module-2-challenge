@@ -4,7 +4,7 @@ import gsap, { Power1 } from 'gsap';
 import ContactCard from './contactInformation';
 import ContactForm from './contactForm';
 
-import '../../styles/Contact.css';
+import './style.css';
 
 export default function Contact() {
 	useEffect(() => {

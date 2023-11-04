@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap, { Power1 } from 'gsap';
 
-function NavBar() {
+function Navbar() {
 	const navbar = useRef();
 
 	useEffect(() => {
@@ -20,23 +20,13 @@ function NavBar() {
 	}, []);
 
 	return (
-		<nav
-			ref={navbar}
-			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
-			id='mainNav'
-			style={{ cursor: 'pointer', background: 'var(--bs-body-bg)', width: '100%' }}>
+		<nav ref={navbar} className='navbar navbar-dark navbar-expand-md sticky-top py-3' id='mainNav' style={{ cursor: 'pointer', background: 'var(--bs-body-bg)', width: '100%' }}>
 			<div className='flex-nowrap container'>
-				<button
-					data-bs-toggle='collapse'
-					className='navbar-toggler'
-					data-bs-target='#navcol-1'>
+				<button data-bs-toggle='collapse' className='navbar-toggler' data-bs-target='#navcol-1'>
 					<span className='visually-hidden'>Toggle navigation</span>
 					<span className='navbar-toggler-icon'></span>
 				</button>
-				<div
-					className='collapse navbar-collapse'
-					id='navcol-1'
-					style={{ transform: 'translate(-191)' }}>
+				<div className='collapse navbar-collapse' id='navcol-1' style={{ transform: 'translate(-191)' }}>
 					<ul className='navbar-nav mx-auto'>
 						<li className='nav-item'>
 							<Link className='nav-link active' to='/'>
@@ -74,4 +64,4 @@ function NavBar() {
 	);
 }
 
-export default NavBar;
+export default Navbar;

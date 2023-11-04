@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Showcase from './components/pages/Showcase';
 import Contact from './components/Contact/index';
@@ -17,7 +17,7 @@ export default function App() {
 
 	return (
 		<Router>
-			<NavBar />
+			<Navbar />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/showcase' element={<Showcase />} />
