@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Install dependencies
       run: npm install
@@ -30,8 +30,14 @@ jobs:
         REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
         REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}
 
-    - name: Deploy to GitHub Pages
+    - name: Set Git User
       run: |
-        git add .env.production
-        git commit -m "Add secrets for deployment"
-        git push
+        git config user.email "brahmvanh@gmail.com"
+        git config user.name "Brahm Van Houzen"
+      shell: bash
+
+    - name: Deploy to GitHub Pages
+      run: | 
+        npm install -g gh-pages  
+        gh-pages -d build 
+        
