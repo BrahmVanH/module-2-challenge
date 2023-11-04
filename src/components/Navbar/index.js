@@ -5,6 +5,9 @@ import gsap, { Power1 } from 'gsap';
 function Navbar() {
 	const navbar = useRef();
 
+	const handleClick = (event) => {
+		event.preventDefault();
+	};
 	useEffect(() => {
 		gsap.fromTo(
 			'#mainNav',
@@ -39,17 +42,17 @@ function Navbar() {
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link to='/resume' target='blank' className='nav-link'>
+							<Link to='/resume' className='nav-link'>
 								Resume
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link className='nav-link' to='/about' target='blank'>
+							<Link className='nav-link' to='/about'>
 								About
 							</Link>
 						</li>
 						<li className='nav-item'>
-							<Link className='nav-link' to='/contact' target='blank'>
+							<Link className='nav-link' to='/contact'>
 								Contact
 							</Link>
 						</li>
