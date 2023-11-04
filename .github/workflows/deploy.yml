@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to trigger the deployment
-
+      - main 
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -30,13 +29,5 @@ jobs:
         REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}
         REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}
 
-    - name: Set Git User
-      run: |
-        git config user.email "brahmvanh@gmail.com"
-        git config user.name "Brahm Van Houzen"
-      shell: bash
-
-    - name: Deploy to GitHub Pages
-      run: | 
-        gh-pages -d build 
+   
         
