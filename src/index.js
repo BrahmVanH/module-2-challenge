@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './styles/bootstrap.min.css';
-import './js/bootstrap.min.js';
+import './assets/bootstrap/bootstrap.min.css';
+import './assets/bootstrap/bootstrap.min.js';
 import { HashRouter } from 'react-router-dom';
 import reportWebVitals from '../src/utils/reportWebVitals';
 import ReactGA from 'react-ga';

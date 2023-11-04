@@ -9,10 +9,9 @@ import weatherNowScreenshot from '../../images/weathernow_screenshot-taller.png'
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import { restProperty } from '@babel/types';
-import '../../styles/Home.css';
+import './Home.css';
 
 import ReactGA from 'react-ga';
-import NavBar from '../NavBar';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -103,8 +102,8 @@ function Home() {
 						</div>
 					</div>
 
-					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='col-12 col-md-6'>
-						<div ref={projectDisplay} className='project-display'>
+					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='my-2 col-12 col-md-6'>
+						<div ref={projectDisplay} className='project-display card'>
 							<a href='https://brahmvanh.github.io/Weather-Forecast/' target='_blank' rel='noopener noreferrer'>
 								<img data-scroll className='card-img w-100 d-block' src={weatherNowScreenshot} />
 								<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
@@ -115,7 +114,7 @@ function Home() {
 						</div>
 					</div>
 
-					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='col-12 col-md-6'>
+					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='my-2 col-12 col-md-6'>
 						<div ref={projectDisplay} className='project-display card'>
 							<a href='https://text-editor-pwa-vanhouzen.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
 								<img data-scroll className='card-img w-100 d-block' src={bteScreenshot} />

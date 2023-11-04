@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-import '../styles/Footer.css';
+import './style.css';
 
 function Footer() {
 	return (

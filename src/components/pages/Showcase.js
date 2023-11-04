@@ -11,7 +11,7 @@ import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import cliReadmeScreenshot from '../../images/CLI-README-generator.jpg';
 import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg';
 
-import '../../styles/Creations.css';
+import './Showcase.css';
 
 import ReactGA from 'react-ga';
 
