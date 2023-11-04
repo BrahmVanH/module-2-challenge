@@ -6,10 +6,13 @@ import Swal from 'sweetalert2';
 // Import EmailJS for form support
 
 function ContactForm() {
+	const serviceId = 'service_lnxjo09';
+	const templateId = 'template_enw06at';
+	const publicKey = 'bh-E7v3RsFhe1yJ5-';
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_PUBLIC_KEY).then(
+		emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
 			(result) => {
 				console.log(result.test);
 				Swal.fire({
