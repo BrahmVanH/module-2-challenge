@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.492ced3d.css",
-    "main.js": "/static/js/main.f25035c0.js",
+    "main.js": "/static/js/main.2528b6bc.js",
     "static/js/377.6489399b.chunk.js": "/static/js/377.6489399b.chunk.js",
     "static/media/RecipeMe_screenshot.svg": "/static/media/RecipeMe_screenshot.b35f1d847e443597ed780443cca5fb72.svg",
     "static/media/eCommerce_back_end-screenshot.jpg": "/static/media/eCommerce_back_end-screenshot.587b17665aa3647a6742.jpg",
@@ -13,11 +13,11 @@
     "static/media/BTE-text-editor-screenshot.png": "/static/media/BTE-text-editor-screenshot.1f3893e9d65ac5259546.png",
     "index.html": "/index.html",
     "main.492ced3d.css.map": "/static/css/main.492ced3d.css.map",
-    "main.f25035c0.js.map": "/static/js/main.f25035c0.js.map",
+    "main.2528b6bc.js.map": "/static/js/main.2528b6bc.js.map",
     "377.6489399b.chunk.js.map": "/static/js/377.6489399b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.492ced3d.css",
-    "static/js/main.f25035c0.js"
+    "static/js/main.2528b6bc.js"
   ]
 }
