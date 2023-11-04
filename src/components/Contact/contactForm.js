@@ -1,5 +1,5 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { Form, Input, TextArea, Button, FormLabel } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
