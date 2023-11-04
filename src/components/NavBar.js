@@ -24,7 +24,7 @@ function NavBar() {
 			ref={navbar}
 			className='navbar navbar-dark navbar-expand-md sticky-top py-3'
 			id='mainNav'
-			style={{ cursor: 'pointer', background: 'var(--bs-body-bg)' }}>
+			style={{ cursor: 'pointer', background: 'var(--bs-body-bg)', width: '100%' }}>
 			<div className='flex-nowrap container'>
 				<button
 					data-bs-toggle='collapse'
