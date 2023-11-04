@@ -33,13 +33,13 @@ function ContactForm() {
 		<div className='contact-cards'>
 			<Form onSubmit={handleOnSubmit}>
 				<div className='mb-3'>
-					<Form.Field id='form-input-control-last-name' control={Input} name='user_name' placeholder='Name' required icon='user_circle' iconPosition='left' />
+					<Form.Field id='form-input-control-last-name' control={Input} name='from_name' placeholder='Name' required icon='user_circle' iconPosition='left' />
 				</div>
 				<div className='mb-3'>
-					<Form.Field id='form-input-control-email' className='email-text' control={Input} name='user_email' placeholder='Email Address' required icon='mail' iconPosition='left' />
+					<Form.Field id='form-input-control-email' className='email-text' control={Input} name='from_email' placeholder='Email Address' required icon='mail' iconPosition='left' />
 				</div>
 				<div className='mb-3'>
-					<Form.Field id='form-textarea-control-opinion' control={TextArea} name='user_message' placeholder='Message' required />
+					<Form.Field id='form-textarea-control-opinion' control={TextArea} name='message' placeholder='Message' required />
 				</div>
 				<div>
 					<Button className='btn btn-primary d-block w-100' type='submit'>
