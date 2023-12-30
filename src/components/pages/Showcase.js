@@ -66,7 +66,7 @@ function Showcase() {
 			<div id='smooth-content' className='row gy-4 row-cols-1 row-cols-md-2 w-100' style={{ maxWidth: '800' }}>
 				<div className='col order-md-first'>
 					<div className='card' data-speed='0.5'>
-						<a target='_blank' rel='noopener noreferrer' href='http://lakesuperiorcaptains.com'>
+						<a target='_blank' rel='noopener noreferrer' href='https://lakesuperiorcaptains.com'>
 							<img className='card-img d-block w-100' src={captainsRentals} alt='captains rentals app screenshot' />
 							<div className='card-img-overlay text-center d-flex flex-column justify-content-end align-items-center p-4'>
 								<div

@@ -80,7 +80,7 @@ function Home() {
 				<div className='row w-100'>
 					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='col-12'>
 						<div ref={projectDisplay} className='project-display card'>
-							<a href='http://lakesuperiorcaptains.com/' target='_blank' rel='noopener noreferrer'>
+							<a href='https://lakesuperiorcaptains.com/' target='_blank' rel='noopener noreferrer'>
 								<img data-scroll className='card-img w-100 d-block' src={captainsRentals} />
 								<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
 									<div
