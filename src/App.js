@@ -15,6 +15,8 @@ export default function App() {
 			ReactGA.pageview(window.location.pathname + window.location.search);
 		}, []);
 
+	
+
 	return (
 		<Router>
 			<Navbar />

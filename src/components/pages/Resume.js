@@ -6,7 +6,7 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { Link } from 'react-router-dom';
 
-import myResume from '../../assets/pdf/developerResume.pdf';
+import myResume from '../../assets/pdf/Brahm_Van_Houzen-Developer_Resume-2024-2.pdf';
 import { render } from '@testing-library/react';
 
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
