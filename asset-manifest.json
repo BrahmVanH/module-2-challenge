@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.65203b8b.css",
-    "main.js": "/static/js/main.27ccae72.js",
+    "main.js": "/static/js/main.27bed8ff.js",
     "static/js/377.6489399b.chunk.js": "/static/js/377.6489399b.chunk.js",
     "static/media/RecipeMe_screenshot.svg": "/static/media/RecipeMe_screenshot.b35f1d847e443597ed780443cca5fb72.svg",
+    "static/media/ss_mech_svcs_gatsby.png": "/static/media/ss_mech_svcs_gatsby.3610fff43bc2fe9afdcc.png",
     "static/media/aurora-borealis-screenshot.webp": "/static/media/aurora-borealis-screenshot.2179657f6eba7b20355a.webp",
     "static/media/captains_rentals-screenshot.webp": "/static/media/captains_rentals-screenshot.6600383cf420849a71bb.webp",
     "static/media/eCommerce_back_end-screenshot.jpg": "/static/media/eCommerce_back_end-screenshot.587b17665aa3647a6742.jpg",
@@ -13,11 +14,11 @@
     "static/media/BTE-text-editor-screenshot.png": "/static/media/BTE-text-editor-screenshot.1f3893e9d65ac5259546.png",
     "index.html": "/index.html",
     "main.65203b8b.css.map": "/static/css/main.65203b8b.css.map",
-    "main.27ccae72.js.map": "/static/js/main.27ccae72.js.map",
+    "main.27bed8ff.js.map": "/static/js/main.27bed8ff.js.map",
     "377.6489399b.chunk.js.map": "/static/js/377.6489399b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65203b8b.css",
-    "static/js/main.27ccae72.js"
+    "static/js/main.27bed8ff.js"
   ]
 }
