@@ -55,17 +55,9 @@ export function Resume() {
 	};
 
 	return (
-		<div
-			ref={main}
-			id='smooth-wrapper'
-			className='d-flex justify-content-center'>
+		<div ref={main} id='smooth-wrapper' className='d-flex justify-content-center'>
 			<Link to='../../assets/pdf/developerResume.pdf'>
-				<Document
-					id='smooth-content'
-					data-speed='0.5'
-					className='py-3 document'
-					file={myResume}
-					onLoadSuccess={onDocumentLoadSuccess}>
+				<Document id='smooth-content' data-speed='0.5' className='py-3 document' file={myResume} onLoadSuccess={onDocumentLoadSuccess}>
 					{renderPages()}
 				</Document>
 			</Link>

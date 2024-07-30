@@ -9,6 +9,7 @@ import weatherNowScreenshot from '../../images/aurora-borealis-screenshot.webp';
 import captainsRentals from '../../images/captains_rentals-screenshot.webp';
 import recipeMeScreenshot from '../../images/RecipeMe_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
+import southShoreScreenshot from '../../images/ss_mech_svcs_gatsby.png'
 import { restProperty } from '@babel/types';
 import './Home.css';
 
@@ -60,14 +61,7 @@ function Home() {
 	// 	return () => ctx.revert();
 	// }, []);
 
-	useEffect(() => {
-		console.log("Hello! My name's Brahm (with a short 'a' sound), thanks for stopping by my website.");
-		console.log(
-			'Although my background labels me as a scientist of sports physiology, my passions and worldview have me striving to explore far outside the confines of human biology. My endeavors have include commercial SCUBA diving, ultra endurance mountain biking, electrical installation, and now web and app development. My goal is to produce polished, well-planned, and beautiful products to share with the world.'
-		);
-		console.log("Here are a few of the projects I've worked on. You can find the rest of my showcase by following the 'Showcase' button in the navbar.");
-		console.log("You can find my professional resume by following the 'Resume' button in the navbar");
-	});
+
 	return (
 		<div ref={main} id='smooth-wrapper'>
 			<div id='scroll-content' className='d-flex flex-column align-items-center'>
@@ -115,8 +109,25 @@ function Home() {
 							</a>
 						</div>
 					</div>
-
 					<div data-speed='0.8' style={{ overflow: 'hidden' }} className='my-2 col-12 col-md-6'>
+						<div ref={projectDisplay} className='project-display card'>
+							<a href='https://southshoremechanical.services' target='_blank' rel='noopener noreferrer'>
+								<img alt='South Shore Mechanical Services Website screenshot' data-scroll className='card-img w-100 d-block' src={southShoreScreenshot} />
+								<div className='card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4'>
+									<div
+										className='pt-2 px-3'
+										style={{
+											backgroundColor: 'rgb(128, 128, 128, .8)',
+											borderRadius: '10px',
+										}}>
+										<h4>South Shore Mechanical Services Website </h4>
+										<p>Website for a handyman service. Built with Gatsby, Tailwind CSS, and Apollo Graphql</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					{/* <div data-speed='0.8' style={{ overflow: 'hidden' }} className='my-2 col-12 col-md-6'>
 						<div ref={projectDisplay} className='project-display card'>
 							<a href='https://text-editor-pwa-vanhouzen.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
 								<img alt='basic text editor screenshot' data-scroll className='card-img w-100 d-block' src={bteScreenshot} />
@@ -133,7 +144,7 @@ function Home() {
 								</div>
 							</a>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

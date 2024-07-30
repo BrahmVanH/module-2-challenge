@@ -11,6 +11,7 @@ import myNotepadScreenshot from '../../images/My_Notepad_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import cliReadmeScreenshot from '../../images/CLI-README-generator.jpg';
 import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg';
+import southShoreScreenshot from '../../images/ss_mech_svcs_gatsby.png';
 
 import './Showcase.css';
 
@@ -77,7 +78,26 @@ function Showcase() {
 									}}>
 									{' '}
 									<h4>Captain Lakefront Rentals</h4>
-									<p className='d-none d-sm-block'>A brochure-style web app for vacation rentals.</p>
+									<p className='d-none d-sm-block'>A MERN Full-Stack Application that uses Apollo Graphql as the API layer and features dynamic image loading from AWS S3.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div className='col order-md-2'>
+					<div className='card' data-speed='0.5'>
+						<a target='_blank' rel='noopener noreferrer' href='https://southshoremechanical.services'>
+							<img className='card-img d-block w-100' src={southShoreScreenshot} alt='south shore mechanical services company website' />
+							<div className='card-img-overlay text-center d-flex flex-column justify-content-end align-items-center p-4'>
+								<div
+									className='pt-2 px-3'
+									style={{
+										backgroundColor: 'rgb(128, 128, 128, 1)',
+										borderRadius: '10px',
+									}}>
+									{' '}
+									<h4>South Shore Mechanical Services</h4>
+									<p className='d-none d-sm-block'>Informational Gatsby SSG app for a contracting service. Built with Gatsby, Tailwind, Node, Express, MongoDb, and AWS Lambda.</p>
 								</div>
 							</div>
 						</a>
@@ -134,25 +154,7 @@ function Showcase() {
 						</a>
 					</div>
 				</div>
-				<div className='col order-md-2'>
-					<div className='card' data-speed='0.5'>
-						<a target='_blank' rel='noopener noreferrer' href='https://my-notepad.herokuapp.com/'>
-							<img className='card-img d-block w-100' src={myNotepadScreenshot} alt='my notepad web application screenshot' />
-							<div className='card-img-overlay text-center d-flex flex-column justify-content-end align-items-center p-4'>
-								<div
-									className='pt-2 px-3'
-									style={{
-										backgroundColor: 'rgb(128, 128, 128, 1)',
-										borderRadius: '10px',
-									}}>
-									{' '}
-									<h4>My notepad</h4>
-									<p className='d-none d-sm-block'>A simple note taking application.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
+
 				<div className='col order-md-2'>
 					<div className='card' data-speed='0.5'>
 						<a target='_blank' rel='noopener noreferrer' href='https://recipeme-recipe-logger.herokuapp.com/'>
