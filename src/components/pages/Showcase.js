@@ -11,7 +11,7 @@ import myNotepadScreenshot from '../../images/My_Notepad_screenshot.svg';
 import bteScreenshot from '../../images/BTE-text-editor-screenshot.png';
 import cliReadmeScreenshot from '../../images/CLI-README-generator.jpg';
 import eCommerceScreenshot from '../../images/eCommerce_back_end-screenshot.jpg';
-import southShoreScreenshot from '../../images/ss_mech_svcs_gatsby.png';
+import southShoreScreenshot from '../../images/ss-mech-svcs-screenshot-w-techs.webp';
 
 import './Showcase.css';
 
@@ -65,7 +65,7 @@ function Showcase() {
 	return (
 		<div id='smooth-wrapper' className='container d-flex flex-column align-items-center py-4 py-xl-5 justify-content-sm-center' ref={main}>
 			<div id='smooth-content' className='row gy-4 row-cols-1 row-cols-md-2 w-100' style={{ maxWidth: '800' }}>
-				<div className='col order-md-first'>
+				<div className='col order-md-2'>
 					<div className='card' data-speed='0.5'>
 						<a target='_blank' rel='noopener noreferrer' href='https://lakesuperiorcaptains.com'>
 							<img className='card-img d-block w-100' src={captainsRentals} alt='captains rentals app screenshot' />
@@ -84,7 +84,7 @@ function Showcase() {
 						</a>
 					</div>
 				</div>
-				<div className='col order-md-2'>
+				<div className='col order-md-first'>
 					<div className='card' data-speed='0.5'>
 						<a target='_blank' rel='noopener noreferrer' href='https://southshoremechanical.services'>
 							<img className='card-img d-block w-100' src={southShoreScreenshot} alt='south shore mechanical services company website' />
