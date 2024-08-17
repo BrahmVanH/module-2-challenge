@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.65203b8b.css",
-    "main.js": "/static/js/main.27bed8ff.js",
+    "main.js": "/static/js/main.4b535cc6.js",
     "static/js/377.6489399b.chunk.js": "/static/js/377.6489399b.chunk.js",
     "static/media/RecipeMe_screenshot.svg": "/static/media/RecipeMe_screenshot.b35f1d847e443597ed780443cca5fb72.svg",
     "static/media/ss_mech_svcs_gatsby.png": "/static/media/ss_mech_svcs_gatsby.3610fff43bc2fe9afdcc.png",
     "static/media/aurora-borealis-screenshot.webp": "/static/media/aurora-borealis-screenshot.2179657f6eba7b20355a.webp",
     "static/media/captains_rentals-screenshot.webp": "/static/media/captains_rentals-screenshot.6600383cf420849a71bb.webp",
     "static/media/eCommerce_back_end-screenshot.jpg": "/static/media/eCommerce_back_end-screenshot.587b17665aa3647a6742.jpg",
+    "static/media/ss-mech-svcs-screenshot-w-techs.webp": "/static/media/ss-mech-svcs-screenshot-w-techs.3cb01d6b2851e2961f42.webp",
     "static/media/CLI-README-generator.jpg": "/static/media/CLI-README-generator.a19592f0a3073d2869a2.jpg",
     "static/media/My_Notepad_screenshot.svg": "/static/media/My_Notepad_screenshot.afe4797f488f68c09d4ccde4acb18f2a.svg",
     "static/media/Brahm_Van_Houzen-Developer_Resume-2024-2.pdf": "/static/media/Brahm_Van_Houzen-Developer_Resume-2024-2.b46b87ac28b832e8380a.pdf",
     "static/media/BTE-text-editor-screenshot.png": "/static/media/BTE-text-editor-screenshot.1f3893e9d65ac5259546.png",
+    "static/media/ts-gatsby-tailwindcss-graphql-apollo-lambda-badges.png": "/static/media/ts-gatsby-tailwindcss-graphql-apollo-lambda-badges.a94bc846d021feec8a1b.png",
     "index.html": "/index.html",
     "main.65203b8b.css.map": "/static/css/main.65203b8b.css.map",
-    "main.27bed8ff.js.map": "/static/js/main.27bed8ff.js.map",
+    "main.4b535cc6.js.map": "/static/js/main.4b535cc6.js.map",
     "377.6489399b.chunk.js.map": "/static/js/377.6489399b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65203b8b.css",
-    "static/js/main.27bed8ff.js"
+    "static/js/main.4b535cc6.js"
   ]
 }
